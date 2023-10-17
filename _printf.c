@@ -18,13 +18,14 @@ int _printf(const char *format, ...)
 		{
 			format++;
 			i = switcher(format, list, i);
+			format++;
 		}
 		else
 		{
 			_putchar(*format);
 			i++;
+			format++;
 		}
-		format++;
 	}
 	va_end(list);
 	return (i);
