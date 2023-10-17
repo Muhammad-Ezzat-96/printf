@@ -12,20 +12,19 @@ int _printf(const char *format, ...)
 
 	va_start(list, format);
 
-	while (*format != '\0')
+	while (*format)
 	{
 		if (*format == '%')
 		{
 			format++;
 			i = switcher(format, list, i);
-			format++;
 		}
 		else
 		{
 			_putachar(*format);
 			i++;
-			format++;
 		}
+		format++;
 	}
 	va_end(list);
 	return (i);
