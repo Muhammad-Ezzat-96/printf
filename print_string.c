@@ -10,7 +10,7 @@ int print_string(va_list list, int i)
 {
 	char *str = va_arg(list, char *);
 
-	while (*str)
+	while (*str != '\0')
 	{
 		putchar(*str);
 		str++;
