@@ -10,7 +10,7 @@ void _printing(char buffer[], int *buff_ind)
 {
 	int i;
 
-	if(*buff_ind > 0)
+	if (*buff_ind > 0)
 	{
 		for (i = 0; i < *buff_ind; i++)
 		{

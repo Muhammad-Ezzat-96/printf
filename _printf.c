@@ -1,7 +1,6 @@
 #include "main.h"
 #include <stdio.h>
 #include <stdarg.h>
-
 #define buff_size 1024
 /**
   *_printf - self designed printf function
@@ -10,12 +9,11 @@
   */
 int _printf(const char *format, ...)
 {
-	va_list args;
 	int counter = 0, buff_ind = 0;
 	char buffer[buff_size];
+	va_list args;
 
 	va_start(args, format);
-
 	while (*format)
 	{
 		if (*format == '%')
@@ -28,11 +26,13 @@ int _printf(const char *format, ...)
 			else if (*format == 'c')
 			{
 				int ch = va_arg(args, int);
+
 				buffer[buff_ind++] = ch;
 			}
 			else if (*format == 's')
 			{
 				char *str = va_arg(args, char *);
+
 				while (*str)
 				{
 					buffer[buff_ind++] = *str;
