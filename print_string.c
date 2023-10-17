@@ -12,9 +12,9 @@ int print_string(va_list list, int i)
 
 	while (*str != '\0')
 	{
-		_putchar(*str);
-		str++;
+		_putachar(*str);
 		i++;
+		str++;
 	}
 	return (i);
 }

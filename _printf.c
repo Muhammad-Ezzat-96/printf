@@ -1,6 +1,4 @@
 #include "main.h"
-#include <stdio.h>
-#include <stdarg.h>
 /**
   *_printf - homemade printf version
   *@format: the buffer string of the printf
@@ -20,13 +18,14 @@ int _printf(const char *format, ...)
 		{
 			format++;
 			i = switcher(format, list, i);
+			format++;
 		}
 		else
 		{
-			_putchar(*format);
+			_putachar(*format);
 			i++;
+			format++;
 		}
-		format++;
 	}
 	va_end(list);
 	return (i);
