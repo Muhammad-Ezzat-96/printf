@@ -12,7 +12,7 @@ int print_string(va_list list, int i)
 
 	while (*str != '\0')
 	{
-		putchar(*str);
+		_putchar(*str);
 		str++;
 		i++;
 	}
