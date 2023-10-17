@@ -3,6 +3,7 @@
 
 #include <stdarg.h>
 #include <stdio.h>
+#include <limits.h>
 
 int _printf(const char *format, ...);
 int switcher(const char *format, va_list list, int i);
