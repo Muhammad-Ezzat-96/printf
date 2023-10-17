@@ -8,7 +8,7 @@
   */
 int _printf(const char *format, ...)
 {
-	int i;
+	int i = 0;
 	va_list list;
 
 	va_start(list, format);
@@ -30,4 +30,3 @@ int _printf(const char *format, ...)
 	va_end(list);
 	return (i);
 }
-
