@@ -6,6 +6,6 @@
 int _printf(const char *format, ...);
 int switcher(const char *format, va_list list, int i);
 int print_string(va_list list, int i);
-void _printing(char buffer[], int *buff_ind);
+int _putchar(char c);
 
 #endif
