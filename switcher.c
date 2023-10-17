@@ -13,14 +13,14 @@ int switcher(const char *format, va_list list, int i)
 	switch (*format)
 	{
 		case 'c':
-			_putachar(va_arg(list, int));
+			putchar(va_arg(list, int));
 			i++;
 			break;
 		case 's':
 			i = print_string(list, i);
 			break;
 		case '%':
-			_putachar('%');
+			putchar('%');
 			i++;
 			break;
 		default:
