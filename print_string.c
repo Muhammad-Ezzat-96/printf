@@ -10,6 +10,10 @@ int print_string(va_list list, int i)
 {
 	char *str = va_arg(list, char *);
 
+	if (str == NULL)
+	{
+		str = NULL;
+	}
 	while (*str != '\0')
 	{
 		_putchar(*str);
